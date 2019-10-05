@@ -32,7 +32,7 @@ public class BankDao_loan implements BankDao{
 			ps.setInt(3, vo.getMoney());
 			ps.setDouble(4, 0.057);
 			ps.setInt(5, (int) (vo.getMoney()/vo.getPeriod()*0.057));
-			ps.setInt(6, (int) ((vo.getMoney()/vo.getPeriod())+((vo.getMoney()*0.057)*vo.getPeriod())));
+			ps.setInt(6, (int) ((vo.getMoney()/vo.getPeriod())+((vo.getMoney()/vo.getPeriod()*0.057))));
 			for(int i=1;i<13;i++) {
 				if(i==4 || i== 7) {
 					 account = account + "-";
