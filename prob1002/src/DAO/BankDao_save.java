@@ -51,7 +51,7 @@ public class BankDao_save implements BankDao{
 			result = ps.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
-			//insert(vo);
+			insert(vo);
 		} finally {
 			JDBCUtil.close(con, ps, null);
 		}
