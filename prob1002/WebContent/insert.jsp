@@ -30,9 +30,10 @@ table , td{
 이름<br>
 <input type="text" name="name" id="name" required="required" ><br>
 기간<br>
-<input type="text" name="period" id="period" required="required" pattern="(^[0-9]*$)">개월<br>
+<input type="text" name="period" id="period" required="required" pattern="([0-9]{1,2})">개월<br>
 월입금액<br>
-<input type="text" name="money" id="money" required="required" pattern="(^[0-9]*$)">원<br>
+<input type="text" name="money" id="money" required="required" pattern="([0-9]{1,10})">원<br>
+<!--(^[0-9]*$) 숫자만 허용하는 정규식 -->
 <input type="submit" value="개설">
 </form>
 
@@ -68,9 +69,9 @@ table , td{
 이름<br>
 <input type="text" name="name" id="name" required="required"><br>
 기간<br>
-<input type="text" name="period" id="period" required="required" pattern="(^[0-9]*$)">개월<br>
+<input type="text" name="period" id="period" required="required" pattern="([0-9]{1,2})">개월<br>
 대출액<br>
-<input type="text" name="money" id="money" required="required" pattern="(^[0-9]*$)">원<br>
+<input type="text" name="money" id="money" required="required" pattern="([0-9]{1,11})">원<br>
 <input type="submit" value="개설">
 </form>
 <c:if test="${not empty map2}">
