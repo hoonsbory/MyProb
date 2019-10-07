@@ -53,12 +53,12 @@ table , td{
 		</tr>
 		<tr>
 			<td>${map.vo.name}</td>
-			<td>${map.vo.period}</td>
-			<td>${map.vo.money}</td>
+			<td>${map.vo.period}개월</td>
+			<td>${map.vo.money}원</td>
 			<td>${map.vo.rate}%</td>
-			<td>${map.vo.interest}</td>
-			<td>${map.vo.entire}</td>
-			<td>${map.vo.returnMoney}</td>
+			<td>${map.vo.interest}원</td>
+			<td>${map.vo.entire}원</td>
+			<td>${map.vo.returnMoney}원</td>
 			<td>${map.vo.account}</td>
 			
 		</tr>
@@ -89,11 +89,11 @@ table , td{
 		</tr>
 		<tr>
 			<td>${map2.vo.name}</td>
-			<td>${map2.vo.period}</td>
-			<td>${map2.vo.money}</td>
+			<td>${map2.vo.period}개월</td>
+			<td>${map2.vo.money}원</td>
 			<td>${map2.vo.rate}%</td>
-			<td>${map2.vo.interest}</td>
-			<td>${map2.vo.returnMoney}</td>
+			<td>${map2.vo.interest}원</td>
+			<td>${map2.vo.returnMoney}원</td>
 			<td>${map2.vo.account}</td>
 			
 		</tr>
